@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(222, 236, 249);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav {
+    flex: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.contact-info span,
+.contact-info a {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: rgb(235, 115, 29);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px; /* Added margin to separate the button from contact info */
+}
+
+#hero {
+    background: url('Images/logo.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-buttons a {
+    background-color: #fff;
+    color: rgb(235, 115, 29);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+.feature td {
+    padding: 20px;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about {
+    display: flex;
+    padding: 50px 0;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+.service td {
+    padding: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin:2% 4%;
+    border-radius: 8px;
+}

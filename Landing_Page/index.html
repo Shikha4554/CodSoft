@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>// script.js
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const headerOffset = document.querySelector('.header').offsetHeight;
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });})
+        </script>
+</head>
+<body>
+    <header style="background-color: rgb(235, 115, 29);">
+        <div class="container">
+            <div class="logo"><img src="Images/home.png" alt="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <span>+91 3676747854</span>
+                <a href="mailto:demo@landingpage.com">Shikha@landingpage.com</a>
+            </div>
+            <a class="cta-button" href="#">Request a Consult</a>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h1>Adventure Awaits</h1>
+            <p>Discover Your Next Adventure</p>
+            <p>Unforgettable experiences await. Explore our exclusive travel packages today</p>
+            <div class="cta-buttons">
+                <a href="#">ReadMore</a>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="feature">
+                <table style="background-color:#fff; width:100%; padding: 0%;">
+                    <td>
+                        <i class="icon">🚀</i>
+                        <h3>Launch Business</h3>
+                        <p>Main agenda is to make best travel business</p>
+                    </td>
+                    <td>
+                        <i class="icon">💬</i>
+                        <h3>Online Support Team</h3>
+                        <p>We provide online booking system and services.</p>
+                    </td>
+                    <td>
+                        <i class="icon">⏰</i>
+                        <h3>Time Management</h3>
+                        <p>Our agenda is to save customer time and deliver best services.</p>
+                    </td>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="about" style="float:left; background-image: url(Images/about.png); width: 40%; margin: 8% 2%; border-radius: 8px;">
+        <div class="container">
+            <h2></h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </section>
+    <section id="about" style="float: right; width: 50%;">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>A travel company engaged in the field of travel agencies specifically to Japan, since 2019 we have served more than 10000 customers. The quality of service we provide is one of the best and cheapest in the world, Our mission is to inspire and enable our clients to discover <br>the beauty and diversity of the world. We strive to provide exceptional travel experiences by offering personalized service, expert advice, and curated travel packages that cater to every type of traveler.
+            <br><a href="#">Read More</a>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            
+            <div class="service" id="service">
+                <h1 style="font-size: 30px;">Our Services</h1>
+                <table style="background-color:#fff; width:100%;">
+                    <td>
+                        <img src="Images/UX.png" alt="Service 1">
+                        <h3>User Experience</h3>
+                        <p>We try provide best user experience and services.</p>
+                    </td>
+                    <td>
+                        <img src="Images/Building.png" alt="Service 2">
+                        <h3>Hotels</h3>
+                        <p>We provide best place for staying and check-in and check-out.</p>
+                    </td>
+                    <td>
+                        <img src="Images/Hotel.png "alt="Service 3">
+                        <h3>Customer services</h3>
+                        <p>We provide best housekeeping services and support.</p>
+                    </td>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #fff;" id="contact">
+        <div class="container" style="background-color: rgb(235, 115, 29);margin:4% 10%; border-radius: 8px;">
+            <p style="padding:4% 30%;text-align:center;">&copy; 2024 Landing Page. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
